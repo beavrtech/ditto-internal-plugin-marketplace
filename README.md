@@ -4,10 +4,23 @@ Our internal marketplace of Claude plugins for the Ditto team.
 
 ## Install
 
-Add this marketplace, then install the plugins you want:
+### In the Claude desktop app (Cowork)
+
+1. Open **Customize** (top-left of the app).
+2. Next to **Personal plugins**, click the **+** button.
+3. Choose **Create plugin → Add marketplace**.
+4. Paste the marketplace URL and confirm:
+
+   ```
+   https://github.com/beavrtech/ditto-internal-plugin-marketplace
+   ```
+
+5. Once the marketplace is added, open it and install **ditto-brand**.
+
+### In Claude Code (CLI)
 
 ```
-/plugin marketplace add <this-repo-url>
+/plugin marketplace add https://github.com/beavrtech/ditto-internal-plugin-marketplace
 /plugin install ditto-brand@ditto-internal
 ```
 
