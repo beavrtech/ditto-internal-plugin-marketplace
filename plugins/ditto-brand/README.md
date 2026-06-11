@@ -1,20 +1,20 @@
 # Ditto Brand
 
-Ditto's brand toolkit for Claude. Keeps decks and copy on-brand.
+Ditto's brand toolkit for Claude. Keeps decks, copy, and resource content on-brand.
 
 ## Skills
 
 | Skill | Triggers on | Status |
 |-------|-------------|--------|
 | `deck-designer` | "make a Ditto deck", "design slides", "build a pitch deck on-brand", "fix this slide to match our brand" | ✅ Ready |
-| `brand-copywriting` | "write this in our brand voice", "draft on-brand copy", "review this against our brand guidelines" | 🚧 Placeholder — guidelines not yet added |
+| `brand-copywriting` | "make this sound like Ditto", "write a LinkedIn post", "draft a hero or headline", "review this against our brand voice" | ✅ Ready |
+| `resource-writer` | "write a Ditto blog post", "draft a CSR news digest", "turn this title into a publish-ready article", "write our guide teaser" | ✅ Ready |
 
 ## Setup
 
-Both skills treat external documents as the source of truth:
-
-- **deck-designer** needs the Ditto **design system template slides** (exact type sizes, hex colors, margins, spacing) and any image assets. Attach or link them when you start a deck. Decks are built as native, editable Canva objects.
-- **brand-copywriting** needs Ditto's **brand guidelines**. Fill the skill in before relying on it.
+- **deck-designer** is used in Claude Design with the correct **Ditto design system selected**. Exact type sizes, colors, spacing, and components come from that design system, not from attached files. The design system is set up once for the organization in Claude Design and applied automatically; without it active, output will not be on-brand. Provide image assets when relevant. Decks export as native, editable Canva objects.
+- **brand-copywriting** is self-contained: the brand voice, vocabulary, mechanics, and LinkedIn playbook live in the skill. Real top-performing posts can be used later to sharpen the social register.
+- **resource-writer** works from an article title (plus optional bucket, author, and key points). Give it real stats and internal links where you have them; it flags anything unverified with placeholders rather than inventing.
 
 ## Contributing
 
