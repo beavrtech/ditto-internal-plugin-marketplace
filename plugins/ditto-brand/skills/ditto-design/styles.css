@@ -1,0 +1,16 @@
+/* ============================================================================
+   DITTO MARKETING DESIGN SYSTEM — root stylesheet
+   This is the single entry point for consumers: link THIS file and you get the
+   full token set (colors, type scale, radii, shadows, spacing) plus the
+   self-hosted brand fonts.
+
+       <link rel="stylesheet" href="styles.css">
+
+   The other stylesheets in this project are intentionally NOT imported here —
+   they carry page-level `html,body` backgrounds and are scoped to specific
+   contexts, so they're linked directly only where they apply:
+     • slides/slide-system.css   — shared layout for the slide-template decks
+     • preview/slides-gallery.css — chrome for the Design System slide cards
+   ============================================================================ */
+
+@import url("colors_and_type.css");

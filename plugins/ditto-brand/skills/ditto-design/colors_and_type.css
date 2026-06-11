@@ -1,0 +1,247 @@
+/* ============================================================================
+   DITTO DESIGN SYSTEM — Colors & Type
+   Source of truth: "for Claude_ Ditto.fig" (Design-System page)
+   Fonts: Inter + Hedvig Letters Serif (both on Google Fonts — canonical)
+   ============================================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Hedvig+Letters+Serif:opsz@12..24&display=swap');
+/* NOTE: the @import above is overridden below by self-hosted @font-face rules
+   for the uploaded brand fonts. It is kept only as an offline fallback. */
+
+/* ---- Self-hosted brand fonts (user-uploaded) ---- */
+@font-face {
+  font-family: "Inter";
+  src: url("fonts/Inter-VariableFont_opsz_wght.ttf") format("truetype-variations");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("fonts/Inter-Italic-VariableFont_opsz_wght.ttf") format("truetype-variations");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Hedvig Letters Serif";
+  src: url("fonts/HedvigLettersSerif-Regular-VariableFont_opsz.ttf") format("truetype-variations");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  /* ---------------------------------------------------------------- FONTS */
+  --font-serif: "Hedvig Letters Serif", "Times New Roman", serif; /* display / headings */
+  --font-sans:  "Inter", system-ui, -apple-system, sans-serif;    /* body / UI / product */
+
+  /* ============================================================ CORE BRAND */
+  --navy:   #130E30;   /* primary text + dark surfaces + primary button */
+  --yellow: #FFE228;   /* primary accent — CTAs, header bars, highlights  */
+  --tan:    #EFF2E5;   /* signature warm background ("Tan") */
+  --white:  #FFFFFF;
+
+  /* ------------------------------------------------------------- TAN scale */
+  /* Ditto's signature warm neutral. Full canonical 50–900 ramp from the
+     Figma sheet; #EFF2E5 ("Tan", the 500 step) is the base brand value. */
+  --tan-50:  #FDFEFC;
+  --tan-100: #FCFCFA;
+  --tan-200: #F9FAF5;
+  --tan-300: #F5F7EF;
+  --tan-400: #F2F5EA;
+  --tan-500: #EFF2E5;  /* = --tan, base */
+  --tan-600: #E9EBD9;
+  --tan-700: #D9DDBC;
+  --tan-800: #C2C79E;
+  --tan-900: #B4B98E;
+
+  /* --------------------------------------------------------- NEUTRAL scale */
+  /* shadcn-derived grays — product UI borders, muted text, fills.           */
+  --neutral-50:  #FAFAFA;
+  --neutral-100: #F5F5F5;
+  --neutral-200: #E5E5E5;
+  --neutral-300: #D4D4D4;
+  --neutral-400: #A3A3A3;
+  --neutral-500: #737373;
+  --neutral-600: #525252;
+  --neutral-700: #404040;
+  --neutral-800: #262626;
+  --neutral-900: #171717;
+
+  /* ----------------------------------------------------------- YELLOW scale */
+  /* Base #FFE228 is the 400 step. */
+  --yellow-50:  #FFFADD;
+  --yellow-100: #FFF3A9;
+  --yellow-200: #FFED7E;
+  --yellow-300: #FFE853;
+  --yellow-400: #FFE228;  /* base */
+  --yellow-500: #F3D300;
+  --yellow-600: #E5C700;
+  --yellow-700: #D1B600;
+  --yellow-800: #887500;
+  --yellow-900: #605300;
+
+  /* ----------------------------------------------------------- ORANGE scale */
+  --orange-50:  #FFF4E7;
+  --orange-100: #FFE7C9;
+  --orange-200: #FFCB87;
+  --orange-300: #FFBC63;  /* base */
+  --orange-400: #F5994D;
+  --orange-500: #EC7839;
+  --orange-600: #E25624;
+  --orange-700: #B5451D;
+  --orange-800: #883416;
+  --orange-900: #5A220E;
+
+  /* ------------------------------------------------------------ GREEN scale */
+  /* Success + progress. Base #59E25D is the 300 step. */
+  --green-50:  #E8FFE9;
+  --green-100: #C9FFCA;
+  --green-200: #A1FAA4;
+  --green-300: #59E25D;  /* base */
+  --green-400: #33D636;
+  --green-500: #25C329;
+  --green-600: #1B981E;
+  --green-700: #106D15;
+  --green-800: #05410A;
+  --green-900: #001800;
+
+  /* ------------------------------------------------------------- BLUE scale */
+  /* Base #3A93FF is the 500 step. */
+  --blue-50:  #EBF4FF;
+  --blue-100: #D8E9FF;
+  --blue-200: #B0D4FF;
+  --blue-300: #89BEFF;
+  --blue-400: #61A8FF;
+  --blue-500: #3A93FF;  /* base */
+  --blue-600: #2E75CC;
+  --blue-700: #235899;
+  --blue-800: #173B66;
+  --blue-900: #0C1D33;
+
+  /* ----------------------------------------------------------- PURPLE scale */
+  /* "Ask AI" / intelligence accent. Base #605CE7 is the 400 step. */
+  --purple-50:  #EAEDFE;
+  --purple-100: #D8DCFF;
+  --purple-200: #B2B6FF;
+  --purple-300: #898AF9;
+  --purple-400: #605CE7;  /* base */
+  --purple-500: #3C35AE;
+  --purple-600: #322987;
+  --purple-700: #251D61;
+  --purple-800: #17113B;
+  --purple-900: #130E30;  /* = Navy */
+
+  /* ---------------------------------------------------------- MAGENTA scale */
+  /* Base #E261E5 is the 500 step. */
+  --magenta-50:  #FCEFFA;
+  --magenta-100: #FADFF7;
+  --magenta-200: #F3C0F5;
+  --magenta-300: #EEA0EF;
+  --magenta-400: #E881EA;
+  --magenta-500: #E261E5;  /* base */
+  --magenta-600: #B54EB7;
+  --magenta-700: #883A89;
+  --magenta-800: #5A275C;
+  --magenta-900: #2D132E;
+
+  /* ---------------------------------------------------------------- RED scale */
+  /* Destructive / error. */
+  --red-50:  #FEF2F2;
+  --red-100: #FFE2E2;
+  --red-200: #FECACA;
+  --red-300: #FCA5A5;
+  --red-400: #F87171;
+  --red-500: #EF4444;  /* base */
+  --red-600: #DC2626;
+  --red-700: #B91C1C;
+  --red-800: #991B1B;
+  --red-900: #7F1D1D;
+
+  /* ===================================================== SEMANTIC FG / BG */
+  --fg-1:   #130E30;   /* primary text (navy) */
+  --fg-2:   #5F5C6E;   /* secondary text (muted purple-gray) */
+  --fg-3:   #737373;   /* tertiary / captions */
+  --fg-invert: #EFF2E5;/* text on navy surfaces (tan, not pure white) */
+
+  --bg-page:    #EFF2E5; /* marketing page background (tan) */
+  --bg-page-app:#FAFAFA; /* product app background */
+  --bg-surface: #FFFFFF; /* cards */
+  --bg-surface-cream: #F9FAF5; /* raised cream surface (menus, popovers) */
+  --bg-dark:    #130E30; /* footer / dark sections */
+
+  --border:        #E5E5E5;  /* default hairline */
+  --border-strong: #D4D4D4;
+  --border-tan:    #D9DDBC;
+
+  /* ---- Semantic aliases (the NAME is the contract, not the step number) ---- */
+  --success:   #25C329;  /* green-500  */
+  --warning:   #EC7839;  /* orange-500 */
+  --danger:    #EF4444;  /* red-500    */
+  --info:      #3A93FF;  /* blue-500   */
+  --accent:    #FFE228;  /* yellow-400 — primary CTA / highlight */
+  --primary:   #130E30;  /* navy-900   — primary surfaces / text */
+  --canvas:    #EFF2E5;  /* tan-500    — app/page canvas */
+  --foreground:#171717;  /* neutral-900 — densest UI text */
+  --ai:        #605CE7;  /* purple-400 — "Ask AI" intelligence accent */
+
+  /* subtle/background tints for status */
+  --success-bg: #EFF2E5;
+  --danger-bg:  #FFE2E2;
+  --ai-bg:      #F3EEFF;
+
+  /* ===================================================== RADII / SHADOW / SPACE */
+  --radius-xs: 5px;     /* small chips, button-tiny */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;    /* product cards */
+  --radius-xl: 24px;
+  --radius-2xl: 30px;   /* nav popovers */
+  --radius-3xl: 48px;   /* large mega-menu panels */
+  --radius-pill: 999px; /* all buttons are pills */
+
+  /* Warm-tinted elevation (shadows carry a brown/olive cast, never neutral) */
+  --shadow-xs: 0 1px 2px rgba(27,36,44,0.04);
+  --shadow-sm: 0 2px 8px rgba(27,36,44,0.08);
+  --shadow-md: 0 12px 32px rgba(64,58,45,0.10);
+  --shadow-lg: 0 40px 80px rgba(64,58,45,0.15);
+  --shadow-xl: 0 48px 96px rgba(64,58,45,0.15);
+
+  --space-1: 4px;  --space-2: 8px;  --space-3: 12px; --space-4: 16px;
+  --space-5: 24px; --space-6: 32px; --space-7: 48px; --space-8: 64px;
+  --space-9: 80px; --space-10: 120px;
+}
+
+/* ============================================================================
+   TYPE SCALE  (desktop / mobile px)
+   Headings → Hedvig Letters Serif 400, tracking -1%
+   Body/UI   → Inter, tracking -2% (−1% at small sizes)
+   Numerals  → Hedvig Letters Serif (big stat figures)
+   ============================================================================ */
+
+.h1, .ds-h1 { font-family: var(--font-serif); font-weight: 400; font-size: 64px; line-height: 1.10; letter-spacing: -0.01em; color: var(--fg-1); }
+.h2, .ds-h2 { font-family: var(--font-serif); font-weight: 400; font-size: 48px; line-height: 1.15; letter-spacing: -0.01em; color: var(--fg-1); }
+.h3, .ds-h3 { font-family: var(--font-serif); font-weight: 400; font-size: 32px; line-height: 1.20; letter-spacing: -0.01em; color: var(--fg-1); }
+.h4, .ds-h4 { font-family: var(--font-serif); font-weight: 400; font-size: 22px; line-height: 1.25; letter-spacing: -0.01em; color: var(--fg-1); }
+
+.text-large    { font-family: var(--font-sans); font-weight: 400; font-size: 22px; line-height: 1.25; letter-spacing: -0.02em; }
+.text-paragraph{ font-family: var(--font-sans); font-weight: 400; font-size: 22px; line-height: 1.45; letter-spacing: -0.02em; }
+.text-paragraph-strong { font-family: var(--font-sans); font-weight: 600; font-size: 22px; line-height: 1.45; letter-spacing: -0.02em; }
+.text-default  { font-family: var(--font-sans); font-weight: 400; font-size: 16px; line-height: 1.25; letter-spacing: -0.02em; }
+.text-default-strong { font-family: var(--font-sans); font-weight: 600; font-size: 16px; line-height: 1.25; letter-spacing: -0.02em; }
+.text-small    { font-family: var(--font-sans); font-weight: 400; font-size: 14px; line-height: 1.25; letter-spacing: -0.01em; }
+.text-small-strong { font-family: var(--font-sans); font-weight: 600; font-size: 14px; line-height: 1.25; letter-spacing: -0.01em; }
+.text-numeral  { font-family: var(--font-serif); font-weight: 400; font-size: 88px; line-height: 1.05; letter-spacing: -0.01em; }
+
+/* Mobile heading sizes */
+@media (max-width: 768px) {
+  .h1, .ds-h1 { font-size: 44px; }
+  .h2, .ds-h2 { font-size: 34px; }
+  .h3, .ds-h3 { font-size: 25px; }
+  .h4, .ds-h4 { font-size: 19px; }
+  .text-large, .text-paragraph, .text-paragraph-strong { font-size: 19px; }
+  .text-default, .text-default-strong { font-size: 15px; }
+  .text-small, .text-small-strong { font-size: 13px; }
+  .text-numeral { font-size: 59px; }
+}

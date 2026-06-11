@@ -1,0 +1,55 @@
+// Ditto shared primitives — Logo, buttons, icons. Exported to window.
+const { useState } = React;
+
+// Inline wordmark so it inherits `color` via currentColor.
+function DittoLogo({ height = 30, color = "var(--navy)", style = {} }) {
+  const width = height * (119.973 / 32);
+  return (
+    <svg height={height} width={width} viewBox="0 0 119.973 32" fill="none" style={{ color, display: "block", flexShrink: 0, ...style }} aria-label="Ditto">
+      <path d="M 109.239 30.009 C 103.074 30.009 98.504 26.019 98.504 20.072 C 98.504 14.088 103.074 10.099 109.239 10.099 C 115.404 10.099 119.973 14.088 119.973 20.072 C 119.973 26.019 115.404 30.009 109.239 30.009 Z M 109.239 22.864 C 110.907 22.864 111.85 21.668 111.85 20.072 C 111.85 18.476 110.907 17.243 109.239 17.243 C 107.571 17.243 106.591 18.476 106.591 20.072 C 106.591 21.668 107.571 22.864 109.239 22.864 Z" fill="currentColor"/>
+      <path d="M 81.299 21.776 L 81.299 17.497 L 79.45 17.497 L 79.45 10.679 L 81.299 10.679 L 81.299 5.058 L 89.822 5.058 L 89.822 10.679 L 97.075 10.679 L 97.075 17.497 L 89.822 17.497 L 89.822 21.559 C 89.822 22.139 90.221 22.538 90.801 22.538 C 91.381 22.538 91.816 22.139 91.816 21.377 L 91.816 19.782 L 97.147 19.782 L 97.147 22.864 C 97.147 27.216 93.593 30.009 89.242 30.009 C 84.455 30.009 81.299 26.563 81.299 21.776 Z" fill="currentColor"/>
+      <path d="M 62.281 21.776 L 62.281 17.497 L 60.432 17.497 L 60.432 10.679 L 62.281 10.679 L 62.281 5.058 L 70.804 5.058 L 70.804 10.679 L 78.057 10.679 L 78.057 17.497 L 70.804 17.497 L 70.804 21.559 C 70.804 22.139 71.203 22.538 71.783 22.538 C 72.363 22.538 72.798 22.139 72.798 21.377 L 72.798 19.782 L 78.129 19.782 L 78.129 22.864 C 78.129 27.216 74.575 30.009 70.224 30.009 C 65.437 30.009 62.281 26.563 62.281 21.776 Z" fill="currentColor"/>
+      <path d="M 54.599 9.301 C 51.88 9.301 49.921 7.379 49.921 4.659 C 49.921 1.939 51.88 0.017 54.599 0.017 C 57.319 0.017 59.314 1.939 59.314 4.659 C 59.314 7.379 57.319 9.301 54.599 9.301 Z M 50.356 10.679 L 58.842 10.679 L 58.842 29.428 L 50.356 29.428 L 50.356 10.679 Z" fill="currentColor"/>
+      <path d="M 39.462 2.991 L 47.984 2.991 L 47.984 29.428 L 40.042 29.428 L 39.788 27.325 C 38.591 29.029 36.814 30.009 34.53 30.009 C 29.924 30.009 26.152 26.019 26.152 20.072 C 26.152 14.088 29.997 10.099 34.784 10.099 C 36.851 10.099 38.41 10.788 39.462 11.949 L 39.462 2.991 Z M 36.959 22.937 C 38.664 22.937 39.643 21.704 39.643 20.072 C 39.643 18.44 38.664 17.171 36.959 17.171 C 35.255 17.171 34.24 18.44 34.24 20.072 C 34.24 21.704 35.255 22.937 36.959 22.937 Z" fill="currentColor"/>
+      <path d="M 4.965 0 C 13.548 0 20.517 6.941 20.517 15.488 L 20.517 16.512 C 20.517 25.059 13.548 32 4.965 32 L 0 32 L 0 27.17 C 1.976 26.992 9.246 25.797 10.259 17.826 C 7.385 19.649 2.986 20.248 0 20.168 L 0 0 L 4.965 0 Z" fill="currentColor"/>
+    </svg>
+  );
+}
+
+// Lucide icon helper (uses the global lucide sprite via data-lucide, re-rendered)
+function Icon({ name, size = 16, color = "currentColor", strokeWidth = 2, style = {} }) {
+  const ref = React.useRef(null);
+  React.useEffect(() => {
+    if (ref.current && window.lucide) {
+      ref.current.innerHTML = "";
+      const el = document.createElement("i");
+      el.setAttribute("data-lucide", name);
+      ref.current.appendChild(el);
+      window.lucide.createIcons({ attrs: { width: size, height: size, stroke: color, "stroke-width": strokeWidth }, nameAttr: "data-lucide" });
+    }
+  }, [name, size, color, strokeWidth]);
+  return <span ref={ref} style={{ display: "inline-flex", width: size, height: size, ...style }} />;
+}
+
+const BTN_BASE = {
+  height: 48, borderRadius: 999, padding: "0 24px", border: "none", cursor: "pointer",
+  fontFamily: "var(--font-sans)", fontSize: 16, letterSpacing: "-0.02em",
+  display: "inline-flex", alignItems: "center", gap: 8, whiteSpace: "nowrap",
+  transition: "transform .12s ease, background .15s ease, opacity .15s ease",
+};
+function Button({ variant = "primary", children, icon, onClick, style = {} }) {
+  const [h, setH] = useState(false);
+  const variants = {
+    primary:   { background: h ? "#241B57" : "var(--navy)", color: "var(--tan)" },
+    secondary: { background: h ? "#FFD400" : "var(--yellow)", color: "var(--navy)" },
+    tertiary:  { background: h ? "rgba(19,14,48,.06)" : "transparent", color: "var(--navy)" },
+  };
+  return (
+    <button onClick={onClick} onMouseEnter={() => setH(true)} onMouseLeave={() => setH(false)}
+      style={{ ...BTN_BASE, ...variants[variant], ...style }}>
+      {children}{icon && <Icon name={icon} size={16} />}
+    </button>
+  );
+}
+
+Object.assign(window, { DittoLogo, Icon, Button });

@@ -1,0 +1,35 @@
+<!-- @dsCard group="Brand" -->
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  html,body{margin:0;background:var(--white);font-family:var(--font-sans);color:var(--fg-1);}
+  .wrap{padding:22px 24px;display:flex;flex-direction:column;gap:16px;}
+  .head{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;}
+  .head b{font-size:13px;font-weight:600;letter-spacing:-0.02em;}
+  .head span{font-size:11px;color:var(--fg-3);letter-spacing:-0.01em;}
+  .note{font-size:11px;line-height:1.5;color:var(--fg-2);letter-spacing:-0.01em;max-width:600px;margin:-6px 0 0;}
+  .pillar{display:inline-flex;align-items:center;gap:6px;font-size:9.5px;font-weight:600;letter-spacing:0.06em;text-transform:uppercase;color:var(--fg-3);}
+  .pillar .dot{width:7px;height:7px;border-radius:50%;background:var(--magenta-500);}
+  .grid{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:140px;gap:6px;}
+  .img{background-size:cover;background-position:center;border-radius:6px;position:relative;border:1px solid var(--border-tan);}
+  .wide{grid-column:span 2;}
+  .cap{position:absolute;bottom:10px;left:12px;right:12px;font-size:11px;color:#fff;background:rgba(19,14,48,.5);padding:5px 11px;border-radius:999px;letter-spacing:-0.01em;backdrop-filter:blur(2px);}
+</style></head><body>
+<div class="wrap">
+  <div class="head"><b>Imagery · Illustration</b><span>Pillar 1 of 3 · the hero brand voice</span></div>
+  <span class="pillar"><span class="dot"></span>Illustration</span>
+  <p class="note">Vibrant <b>risograph-style illustration</b> is Ditto's primary imagery voice — sunny scenes of
+    people, glass buildings, gardens and coastlines rendered in a CMYK-halftone / fine line-art technique on a
+    cream ground. A limited bright palette (cyan sky, magenta foliage, golden light, lime green) keeps every
+    scene warm, hopeful and unmistakably Ditto. Use full-bleed or in soft rounded, navy-bordered frames.</p>
+  <div class="grid">
+    <div class="img wide" style="background-image:url(../assets/illustrations/businesses-01.jpg);"><span class="cap">Risograph · CMYK halftone · cyan / yellow / magenta on cream</span></div>
+    <div class="img" style="background-image:url(../assets/illustrations/world-16.jpg);"></div>
+    <div class="img" style="background-image:url(../assets/illustrations/world-05.jpg);"></div>
+    <div class="img" style="background-image:url(../assets/illustrations/partners-03.jpg);"></div>
+    <div class="img" style="background-image:url(../assets/illustrations/businesses-09.jpg);"></div>
+    <div class="img" style="background-image:url(../assets/illustrations/world-11.jpg);"></div>
+    <div class="img" style="background-image:url(../assets/illustrations/world-03.jpg);"></div>
+  </div>
+</div>
+</body></html>

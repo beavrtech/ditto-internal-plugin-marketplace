@@ -11,7 +11,7 @@
     {
       "name": "ditto-brand",
       "source": "./plugins/ditto-brand",
-      "description": "Ditto brand toolkit: on-brand deck design and brand-guideline copywriting."
+      "description": "Ditto brand toolkit: the full design system plus on-brand UI design, deck design, brand-guideline copywriting, and resource writing."
     }
   ]
 }

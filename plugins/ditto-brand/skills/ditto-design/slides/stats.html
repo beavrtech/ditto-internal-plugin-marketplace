@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ditto — Stat layouts</title>
+<link rel="icon" href="../assets/favicon.svg">
+<link rel="stylesheet" href="../colors_and_type.css">
+<link rel="stylesheet" href="slide-system.css">
+<script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+<deck-stage width="1920" height="1080">
+  <section data-label="Problem">
+    <div class="s">
+      <div class="body" style="left:116px;right:116px;top:0;bottom:0;">
+        <div class="prob">
+          <div>
+            <div class="eyebrow">The problem</div>
+            <h2 class="h-head">Regulatory monitoring has quietly become <span class="hl">a full-time job.</span></h2>
+            <p class="lead">Medical device teams are buried in sources — FDA, ISO, MDCG, EU MDR, PubMed — and the rules keep moving. Most of it still happens in spreadsheets.</p>
+          </div>
+          <div class="prob-stats">
+            <div class="prob-stat"><div class="n">6+</div><div class="d">authoritative sources a QA/RA team is expected to monitor continuously — FDA, ISO, MDCG, EU MDR, PubMed, GUDID.</div></div>
+            <div class="prob-stat"><div class="n">Days</div><div class="d">typically lost per month scanning, filtering and summarising regulatory changes by hand.</div></div>
+            <div class="prob-stat"><div class="n">0</div><div class="d">auditable trail when that monitoring lives in inboxes, bookmarks, and ad-hoc documents.</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section data-label="Stat · big">
+    <div class="s">
+      <div class="body" style="left:116px;right:116px;top:0;bottom:0;">
+        <div class="statbig">
+          <div class="num-xl">3×</div>
+          <div>
+            <h2 class="h-head">Faster literature review.</h2>
+            <p class="lead">Compared to manual PubMed + OpenAlex screening, Qalico surfaces relevant papers in a fraction of the time — and tracks what's new since your last review.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section data-label="Stats · row">
+    <div class="s">
+      <div class="body" style="top:130px;">
+        <h2 class="h-head">The numbers behind the platform.</h2>
+        <div class="statrow">
+          <div class="col"><div class="stat-n">14</div><div class="stat-l">Manufacturers shipping in production.</div></div>
+          <div class="col"><div class="stat-n">2,400+</div><div class="stat-l">Regulatory documents indexed every week.</div></div>
+          <div class="col"><div class="stat-n">87%</div><div class="stat-l">Reduction in CAPA drafting time.</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section data-label="Stat · circle">
+    <div class="s">
+      <div class="body" style="left:116px;right:116px;top:0;bottom:0;">
+        <div class="bigc">
+          <div class="bigc-circle"><div class="bigc-num">68%</div><div class="bigc-lab">Of buyers now screen on CSR</div></div>
+          <div class="bigc-txt">
+            <div class="eyebrow dot-on"><span class="dot"></span>The cost of falling behind</div>
+            <h2 class="h-head">Procurement is asking the question first.</h2>
+            <p class="lead">More than two-thirds of large buyers now weigh sustainability and compliance scores before they sign. A weak rating doesn't just lose points — it loses the shortlist.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section data-label="Stat · 4x">
+    <div class="s yel">
+      <div class="body" style="left:116px;right:116px;top:0;bottom:0;">
+        <div class="spd">
+          <div class="eyebrow center">Speed to compliant</div>
+          <div class="spd-big"><span class="n">4</span><span class="x">×</span></div>
+          <p class="spd-state">Faster from kickoff to a submitted assessment — the same rigour, a quarter of the time.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</deck-stage>
+
+<script src="deck-stage.js"></script>
+<script src="image-slot.js"></script>
+<script>
+  // ---- Deck title: edit this once; it auto-fills the footer of every slide ----
+  const DECK_TITLE = "Ditto · Stat layouts";
+
+  // Inject shared chrome (logo, url, footers) into every slide so the
+  // editable slide markup above stays focused on content.
+  (function () {
+    const TITLE = DECK_TITLE;
+    document.querySelectorAll('deck-stage > section').forEach((sec, i) => {
+      const s = sec.querySelector('.s');
+      if (!s) return;
+      const split = s.classList.contains('split');
+      const logo = document.createElement('img'); logo.className = 'chrome-logo'; logo.src = '../assets/ditto-logo-navy.png'; logo.alt = 'Ditto';
+      const url = document.createElement('div'); url.className = 'chrome-url'; url.textContent = 'trustditto.com';
+      const fl = document.createElement('div'); fl.className = 'chrome-ft l'; fl.textContent = TITLE;
+      const fr = document.createElement('div'); fr.className = 'chrome-ft r'; fr.textContent = String(i + 1).padStart(2, '0');
+      s.append(logo, url, fl, fr);
+      // split slides: nudge chrome so it sits over the correct panels
+      if (split) { url.style.color = '#5F5C6E'; }
+    });
+    if (window.lucide) lucide.createIcons();
+  })();
+</script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!-- @dsCard group="Brand" -->
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  html,body{margin:0;background:var(--white);font-family:var(--font-sans);color:var(--fg-1);}
+  .wrap{padding:22px 24px;display:flex;flex-direction:column;gap:20px;}
+  .head{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;}
+  .head b{font-size:13px;font-weight:600;letter-spacing:-0.02em;}
+  .head span{font-size:11px;color:var(--fg-3);letter-spacing:-0.01em;}
+  .note{font-size:11px;line-height:1.55;color:var(--fg-2);letter-spacing:-0.01em;max-width:640px;margin:-10px 0 0;}
+  .note b{color:var(--fg-1);font-weight:600;}
+  .pillar{display:inline-flex;align-items:center;gap:6px;font-size:9.5px;font-weight:600;letter-spacing:0.06em;text-transform:uppercase;color:var(--fg-3);}
+  .pillar .dot{width:7px;height:7px;border-radius:50%;background:var(--blue-500);}
+  .group{display:flex;flex-direction:column;gap:11px;}
+  .glabel{font-size:9.5px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:var(--fg-3);}
+
+  /* ---- shape marks / primitives on tan paper ---- */
+  .marks{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;}
+  .mark{aspect-ratio:1/1;border-radius:12px;border:1px solid var(--border-tan);background:var(--tan);
+    background-repeat:no-repeat;background-position:center;background-size:72%;position:relative;}
+  .mark .ctag{position:absolute;bottom:8px;left:9px;font-size:8.5px;color:var(--fg-2);letter-spacing:-0.01em;
+    background:rgba(255,255,255,.78);padding:2px 6px;border-radius:5px;}
+  .markband{border:1px solid var(--border-tan);border-radius:12px;background:var(--tan);overflow:hidden;
+    display:flex;flex-direction:column;}
+  .markband .img{background-image:url(../assets/shapes/shape-band-thin.png);background-repeat:no-repeat;
+    background-position:center;background-size:contain;min-height:64px;}
+  .markband .cap{font-size:8.5px;color:var(--fg-3);letter-spacing:-0.01em;padding:7px 10px;border-top:1px solid var(--border-tan);}
+
+  /* ---- full-bleed compositions: the primary, as-used assets ---- */
+  .bleeds{display:grid;grid-template-columns:1fr 1fr;gap:10px;}
+  .bleed{aspect-ratio:16/9;border-radius:12px;overflow:hidden;border:1px solid var(--border-tan);
+    background-size:cover;background-position:center;position:relative;}
+  .bleed .ctag{position:absolute;bottom:8px;left:9px;font-size:8.5px;color:var(--fg-2);letter-spacing:-0.01em;
+    background:rgba(255,255,255,.78);padding:2px 6px;border-radius:5px;}
+
+  /* ---- stacked-shape rails ---- */
+  .stacks{display:grid;grid-template-columns:1fr 158px;gap:12px;align-items:start;}
+  .stk{border:1px solid var(--border-tan);border-radius:12px;background:var(--white);position:relative;overflow:hidden;
+    display:flex;flex-direction:column;}
+  .stk .img{flex:1;background-repeat:no-repeat;}
+  .stk .cap{font-size:8.5px;color:var(--fg-3);letter-spacing:-0.01em;padding:7px 10px;border-top:1px solid var(--border-tan);}
+  .stk.h .img{background-image:url(../assets/shapes/shape-stack-horizontal.png);background-size:contain;background-position:center;min-height:84px;}
+  .stk.thin .img{background-image:url(../assets/shapes/shape-band-thin.png);background-size:contain;background-position:center;min-height:60px;}
+  .stk.wide .img{background-image:url(../assets/shapes/shape-stack-rail-wide.png);background-size:contain;background-position:center;min-height:72px;}
+  .stk.v .img{background-image:url(../assets/shapes/shape-stack-vertical.png);background-size:contain;background-position:center;min-height:300px;}
+  .rails-left{display:flex;flex-direction:column;gap:12px;}
+</style></head><body>
+<div class="wrap">
+  <div class="head"><b>Imagery · Overlapping shapes</b><span>Pillar 2 of 3 · geometric brand marks</span></div>
+  <span class="pillar"><span class="dot"></span>Overlapping shapes</span>
+  <p class="note">Rounded geometric shapes in the secondary palette, <b>overlapped so they blend at the seams</b> on the tan
+    paper. Used <b>full-bleed and cropped</b> behind title slides, or strung into <b>stacked rails</b> — fine visual
+    detailing that adds a touch of flair to very simple layouts — never layered over photography or illustration.</p>
+
+  <div class="group">
+    <div class="glabel">Shape marks &amp; primitives · assets/shapes/</div>
+    <div class="marks">
+      <div class="mark" style="background-image:url(../assets/shapes/shape-mark-fastforward.png)"><span class="ctag">mark-fastforward</span></div>
+      <div class="mark" style="background-image:url(../assets/shapes/shape-mark-circle-play.png)"><span class="ctag">mark-circle-play</span></div>
+      <div class="mark" style="background-image:url(../assets/shapes/shape-cluster-stacked.png)"><span class="ctag">cluster-stacked</span></div>
+      <div class="mark" style="background-image:url(../assets/shapes/shape-cluster-circle-rect.png)"><span class="ctag">cluster-circle-rect</span></div>
+    </div>
+  </div>
+
+  <div class="group">
+    <div class="glabel">Full-bleed compositions · assets/shapes/shape-fullbleed-*.png</div>
+    <div class="bleeds">
+      <div class="bleed" style="background-image:url(../assets/shapes/shape-fullbleed-1.png)"><span class="ctag">fullbleed-1</span></div>
+      <div class="bleed" style="background-image:url(../assets/shapes/shape-fullbleed-2.png)"><span class="ctag">fullbleed-2</span></div>
+      <div class="bleed" style="background-image:url(../assets/shapes/shape-fullbleed-3.png)"><span class="ctag">fullbleed-3</span></div>
+      <div class="bleed" style="background-image:url(../assets/shapes/shape-fullbleed-4.png)"><span class="ctag">fullbleed-4</span></div>
+      <div class="bleed" style="background-image:url(../assets/shapes/shape-fullbleed-5.png)"><span class="ctag">fullbleed-5</span></div>
+      <div class="bleed" style="background-image:url(../assets/shapes/shape-fullbleed-6.png)"><span class="ctag">fullbleed-6</span></div>
+      <div class="bleed" style="background-image:url(../assets/shapes/shape-fullbleed-7.png)"><span class="ctag">fullbleed-7</span></div>
+      <div class="bleed" style="background-image:url(../assets/shapes/shape-fullbleed-8.png)"><span class="ctag">fullbleed-8</span></div>
+      <div class="bleed" style="background-image:url(../assets/shapes/shape-fullbleed-9.png)"><span class="ctag">fullbleed-9</span></div>
+      <div class="bleed" style="background-image:url(../assets/shapes/shape-fullbleed-10.png)"><span class="ctag">fullbleed-10</span></div>
+    </div>
+  </div>
+
+  <div class="group">
+    <div class="glabel">Stacked rails · visual detailing for simple layouts</div>
+    <div class="stacks">
+      <div class="rails-left">
+        <div class="stk h"><div class="img"></div><div class="cap">shape-stack-horizontal · wide rail</div></div>
+        <div class="stk wide"><div class="img"></div><div class="cap">shape-stack-rail-wide · full-width woven rail</div></div>
+        <div class="stk thin"><div class="img"></div><div class="cap">shape-band-thin · slim woven rail</div></div>
+      </div>
+      <div class="stk v"><div class="img"></div><div class="cap">shape-stack-vertical · column</div></div>
+    </div>
+  </div>
+</div>
+</body></html>

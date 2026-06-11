@@ -1,0 +1,93 @@
+/* Shared styling for the Slides cards — master/detail:
+   a scrollable thumbnail rail (all slides) on the left, a large readable
+   preview of the selected slide on the right. */
+html, body { margin: 0; }
+body {
+  background: var(--tan-300);
+  font-family: var(--font-sans);
+  color: var(--fg-1);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ---- header ---- */
+.sg-head {
+  padding: 30px 28px 20px;
+  border-bottom: 1px solid var(--border-tan);
+}
+.sg-eyebrow {
+  font-size: 13px; font-weight: 600; letter-spacing: 0.14em;
+  text-transform: uppercase; color: var(--fg-3); margin: 0 0 9px;
+  display: flex; align-items: center; gap: 8px;
+}
+.sg-eyebrow::before {
+  content: ""; width: 9px; height: 9px; border-radius: 999px;
+  background: var(--yellow); display: inline-block;
+}
+.sg-title {
+  font-family: var(--font-serif); font-weight: 400; font-size: 31px;
+  line-height: 1.1; letter-spacing: -0.01em; color: var(--fg-1); margin: 0 0 7px;
+}
+.sg-desc {
+  font-size: 14.5px; line-height: 1.5; letter-spacing: -0.01em;
+  color: var(--fg-2); margin: 0; max-width: 660px; text-wrap: pretty;
+}
+.sg-open {
+  display: inline-flex; align-items: center; gap: 6px; margin-top: 14px;
+  font-size: 13px; font-weight: 600; letter-spacing: -0.01em;
+  color: var(--navy); text-decoration: none;
+  background: var(--tan-600); padding: 8px 14px; border-radius: 999px;
+}
+.sg-open:hover { background: var(--tan-700); }
+
+/* ---- master / detail body ---- */
+.sg { display: flex; gap: 22px; padding: 22px 28px 26px; align-items: stretch; height: 432px; box-sizing: border-box; }
+
+/* left rail — every slide as a small thumbnail */
+.sg-rail {
+  flex: 0 0 138px; width: 138px;
+  overflow-y: auto;
+  display: flex; flex-direction: column; gap: 11px;
+  padding-right: 6px; padding-bottom: 2px;
+}
+.sg-rail::-webkit-scrollbar { width: 7px; }
+.sg-rail::-webkit-scrollbar-thumb { background: var(--tan-700); border-radius: 999px; }
+.sg-thumb {
+  border: 0; padding: 0; margin: 0; background: none; cursor: pointer;
+  text-align: left; display: flex; flex-direction: column; gap: 5px; width: 100%;
+  font-family: inherit;
+}
+.sg-tframe {
+  width: 132px; height: 74px; border-radius: 7px; overflow: hidden;
+  background: var(--navy); border: 2px solid var(--border-tan);
+  box-shadow: var(--shadow-xs); transition: border-color .12s, box-shadow .12s;
+  position: relative;
+}
+.sg-tframe iframe { width: 132px; height: 74px; border: 0; display: block; pointer-events: none; }
+.sg-thumb:hover .sg-tframe { border-color: var(--tan-900); }
+.sg-thumb[aria-selected="true"] .sg-tframe {
+  border-color: var(--navy); box-shadow: 0 0 0 2px var(--yellow), var(--shadow-sm);
+}
+.sg-tlabel {
+  font-size: 11px; line-height: 1.25; letter-spacing: -0.01em; color: var(--fg-3);
+  display: flex; gap: 6px;
+}
+.sg-thumb[aria-selected="true"] .sg-tlabel { color: var(--fg-1); font-weight: 600; }
+.sg-tnum { font-variant-numeric: tabular-nums; color: var(--fg-3); }
+
+/* right — large readable preview */
+.sg-stage { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 12px; justify-content: center; }
+.sg-cap { display: flex; align-items: baseline; gap: 11px; }
+.sg-num {
+  font-family: var(--font-serif); font-size: 19px; color: var(--fg-3);
+  font-variant-numeric: tabular-nums;
+}
+.sg-lab { font-size: 15px; font-weight: 600; letter-spacing: -0.01em; color: var(--fg-1); }
+.sg-frame {
+  width: 100%; aspect-ratio: 16 / 9;
+  border-radius: 14px; overflow: hidden;
+  background: var(--navy);
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--border-tan);
+}
+.sg-frame iframe { width: 100%; height: 100%; border: 0; display: block; }
+.sg-err { padding: 30px; color: var(--danger); font-size: 14px; }

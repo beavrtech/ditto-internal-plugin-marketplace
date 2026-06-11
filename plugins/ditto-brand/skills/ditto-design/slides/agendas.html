@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ditto — Agenda layouts</title>
+<link rel="icon" href="../assets/favicon.svg">
+<link rel="stylesheet" href="../colors_and_type.css">
+<link rel="stylesheet" href="slide-system.css">
+<script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+<deck-stage width="1920" height="1080">
+  <section data-label="Agenda">
+    <div class="s">
+      <div class="body" style="top:130px;bottom:130px;">
+        <div class="agn">
+          <div class="agn-row"><div class="agn-n">01</div><div><h3 class="agn-t">The problem.</h3><p class="lead">QARA teams spend 60% of their time stitching evidence together. The other 40% is also stitching evidence together.</p></div></div>
+          <div class="agn-row"><div class="agn-n">02</div><div><h3 class="agn-t">The platform.</h3><p class="lead">One canvas for CAPAs, PMS reports, literature reviews, and regulatory intelligence.</p></div></div>
+          <div class="agn-row"><div class="agn-n">03</div><div><h3 class="agn-t">What's next.</h3><p class="lead">The 2026 roadmap, customer outcomes, and where you fit in.</p></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section data-label="Agenda · split">
+    <div class="s split">
+      <div class="ya">
+        <div class="ya-left">
+          <h2 class="h-head">Today's<br>topics</h2>
+        </div>
+        <div class="ya-right">
+          <div class="ti-wrap">
+            <div class="ti"><div class="node">1</div><div class="it">Item</div></div>
+            <div class="ti"><div class="node">2</div><div class="it">Item</div></div>
+            <div class="ti"><div class="node">3</div><div class="it">Item</div></div>
+            <div class="ti"><div class="node">4</div><div class="it">Item</div></div>
+            <div class="ti"><div class="node">5</div><div class="it">Item</div></div>
+            <div class="ti"><div class="node">6</div><div class="it">Item</div></div>
+            <div class="ti"><div class="node">7</div><div class="it">Item</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section data-label="Agenda · pills">
+    <div class="s">
+      <div class="body" style="left:116px;right:116px;top:0;bottom:0;">
+        <div class="agp">
+          <div class="agp-left">
+            <div class="eyebrow">Introduction</div>
+            <h2 class="h-head">Déroulé de la session.</h2>
+            <div class="agp-rule"></div>
+            <p class="lead">45 minutes au total. Posez vos questions à tout moment via le chat — nous y répondrons en fin de session.</p>
+          </div>
+          <div class="agp-list">
+            <div class="agp-row"><div class="agp-n">01</div><h3 class="agp-t">Le partenariat de co-développement</h3><div class="agp-pill">5 min</div></div>
+            <div class="agp-row"><div class="agp-n">02</div><h3 class="agp-t">Retour d'expérience — Isocèle Conseil</h3><div class="agp-pill">15 min</div></div>
+            <div class="agp-row"><div class="agp-n">03</div><h3 class="agp-t">Démonstration de la plateforme Qalico</h3><div class="agp-pill">15 min</div></div>
+            <div class="agp-row"><div class="agp-n">04</div><h3 class="agp-t">Questions &amp; réponses</h3><div class="agp-pill">10 min</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section data-label="Agenda · timeline">
+    <div class="s agz">
+      <div class="agz-panel"></div>
+      <img class="agz-shapes" src="../assets/shapes/shape-stack-vertical.png" alt="">
+      <h1 class="agz-title">Agenda</h1>
+      <div class="agz-list">
+        <div class="agz-rail"></div>
+        <div class="agz-item"><div class="agz-min">15 min</div><div class="agz-it">Item</div></div>
+        <div class="agz-item"><div class="agz-min">15 min</div><div class="agz-it">Item</div></div>
+        <div class="agz-item"><div class="agz-min">15 min</div><div class="agz-it">Item</div></div>
+      </div>
+    </div>
+  </section>
+</deck-stage>
+
+<script src="deck-stage.js"></script>
+<script src="image-slot.js"></script>
+<script>
+  // ---- Deck title: edit this once; it auto-fills the footer of every slide ----
+  const DECK_TITLE = "Ditto · Agenda layouts";
+
+  // Inject shared chrome (logo, url, footers) into every slide so the
+  // editable slide markup above stays focused on content.
+  (function () {
+    const TITLE = DECK_TITLE;
+    document.querySelectorAll('deck-stage > section').forEach((sec, i) => {
+      const s = sec.querySelector('.s');
+      if (!s) return;
+      const split = s.classList.contains('split');
+      const logo = document.createElement('img'); logo.className = 'chrome-logo'; logo.src = '../assets/ditto-logo-navy.png'; logo.alt = 'Ditto';
+      const url = document.createElement('div'); url.className = 'chrome-url'; url.textContent = 'trustditto.com';
+      const fl = document.createElement('div'); fl.className = 'chrome-ft l'; fl.textContent = TITLE;
+      const fr = document.createElement('div'); fr.className = 'chrome-ft r'; fr.textContent = String(i + 1).padStart(2, '0');
+      s.append(logo, url, fl, fr);
+      // split slides: nudge chrome so it sits over the correct panels
+      if (split) { url.style.color = '#5F5C6E'; }
+    });
+    if (window.lucide) lucide.createIcons();
+  })();
+</script>
+</body>
+</html>

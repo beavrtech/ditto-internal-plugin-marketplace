@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!-- @dsCard group="Colors" name="Accent & semantic ramps" subtitle="Yellow · Orange · Red · Green · Blue · Purple · Magenta — 50–900" viewport="700x350" --><html lang="en"><head><meta charset="utf-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  html,body{margin:0;background:var(--white);font-family:var(--font-sans);color:var(--fg-1);}
+  .wrap{padding:18px 20px;display:flex;flex-direction:column;gap:7px;}
+  .fam{display:flex;align-items:center;gap:8px;}
+  .lab{width:64px;flex-shrink:0;font-size:12px;font-weight:600;letter-spacing:-0.02em;}
+  .ramp{display:flex;gap:4px;flex:1;}
+  .ramp div{flex:1;height:42px;border-radius:6px;border:1px solid rgba(19,14,48,.06);display:flex;align-items:center;justify-content:center;}
+  .ramp div b{font-size:8.5px;font-weight:600;letter-spacing:-0.02em;font-family:var(--font-sans);}
+  .ramp div.base{outline:2px solid var(--navy);outline-offset:1px;z-index:1;}
+  .scale{display:flex;align-items:center;gap:4px;margin-left:72px;}
+  .scale span{flex:1;text-align:center;font-size:9px;color:var(--fg-3);}
+</style></head><body>
+<div class="wrap">
+  <div class="scale" id="scale"></div>
+  <div id="fams"></div>
+</div>
+<script>
+  const PAL = {
+    Yellow:  ["FFFADD","FFF3A9","FFED7E","FFE853","FFE228","F3D300","E5C700","D1B600","887500","605300"],
+    Orange:  ["FFF4E7","FFE7C9","FFCB87","FFBC63","F5994D","EC7839","E25624","B5451D","883416","5A220E"],
+    Red:     ["FEF2F2","FFE2E2","FECACA","FCA5A5","F87171","EF4444","DC2626","B91C1C","991B1B","7F1D1D"],
+    Green:   ["E8FFE9","C9FFCA","A1FAA4","59E25D","33D636","25C329","1B981E","106D15","05410A","001800"],
+    Blue:    ["EBF4FF","D8E9FF","B0D4FF","89BEFF","61A8FF","3A93FF","2E75CC","235899","173B66","0C1D33"],
+    Purple:  ["EAEDFE","D8DCFF","B2B6FF","898AF9","605CE7","3C35AE","322987","251D61","17113B","130E30"],
+    Magenta: ["FCEFFA","FADFF7","F3C0F5","EEA0EF","E881EA","E261E5","B54EB7","883A89","5A275C","2D132E"],
+  };
+  const BASE = { Yellow:4, Orange:3, Red:5, Green:3, Blue:5, Purple:4, Magenta:5 };
+  const STEPS = [50,100,200,300,400,500,600,700,800,900];
+  // luminance to pick legible label color
+  const dark = h => { const n=parseInt(h,16); const r=(n>>16)&255,g=(n>>8)&255,b=n&255; return (0.299*r+0.587*g+0.114*b) < 140; };
+  document.getElementById("scale").innerHTML = STEPS.map(s=>`<span>${s}</span>`).join("");
+  const fams = document.getElementById("fams");
+  fams.style.cssText = "display:flex;flex-direction:column;gap:7px";
+  fams.innerHTML = Object.entries(PAL).map(([name,hexes])=>
+    `<div class="fam"><span class="lab">${name}</span><div class="ramp">`+
+    hexes.map((h,i)=>`<div class="${i===BASE[name]?'base':''}" style="background:#${h}"><b style="color:${dark(h)?'#fff':'#130E30'}">${h}</b></div>`).join("")+
+    `</div></div>`).join("");
+</script>
+</body></html>

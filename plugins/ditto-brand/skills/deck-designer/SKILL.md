@@ -18,9 +18,15 @@ Design Ditto decks that look unmistakably like Ditto. These rules are the priori
 
 ## Source of truth
 
-All exact values — type sizes, colors (hex), corner padding, content margins, the spacing scale, and slide dimensions — live in the **Ditto design system template slides**. Pull every measurement from there. Do not invent or approximate measurements; match the templates.
+All exact values — type sizes, colors (hex), corner padding, content margins, the spacing scale, and slide dimensions — live in the **Ditto design system template slides**, bundled with this plugin in the sibling `ditto-design` skill:
 
-Before designing, make sure you have the design system template and any provided image assets. If they are not attached, ask the user to provide them (or the link). If a specific image source can't be accessed, leave a clearly labeled placeholder — never drop in generic stock to fill the gap.
+- **Templates:** `../ditto-design/slides/` — one deck per section (`covers.html`, `chapters.html`, `agendas.html`, `quotes.html`, `closings.html`, `stats.html`, `content.html`), all keyed off `slides/slide-system.css` (the single source of truth for canvas, type, spacing, and every slide layout). See `slides/README.md`.
+- **Tokens & fonts:** `../ditto-design/colors_and_type.css` and `../ditto-design/fonts/` (Hedvig Letters Serif + Inter).
+- **Assets:** `../ditto-design/assets/` — logo, favicon, illustrations, overlapping-shapes marks, brand icons.
+
+Pull every measurement from `slide-system.css` and the template decks. Do not invent or approximate measurements; match the templates. Copy a `<section>` from the matching deck and swap the copy for fast on-brand slides.
+
+If the user provides their own image assets, use those. If a specific image source can't be accessed, leave a clearly labeled placeholder — never drop in generic stock to fill the gap.
 
 ## Build editable, native Canva objects
 
@@ -103,7 +109,7 @@ Use the design system's spacing scale between elements. Corners follow their own
 
 ## Images & icons
 
-Icons from **Lucide** (https://lucide.dev) — consistent line style and stroke weight across the deck. Photography/illustration: use assets the user provides or pull directly from the design system. If you can't access an image source, leave a clearly labeled placeholder — do NOT drop in generic stock.
+Icons from **Lucide** (https://lucide.dev) — consistent line style and stroke weight across the deck. Photography/illustration: use assets the user provides or pull directly from the bundled design system (`../ditto-design/assets/` — illustrations and overlapping-shapes marks). If you can't access an image source, leave a clearly labeled placeholder — do NOT drop in generic stock.
 
 ## Creative direction
 

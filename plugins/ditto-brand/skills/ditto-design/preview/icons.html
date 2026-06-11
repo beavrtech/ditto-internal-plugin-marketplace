@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!-- @dsCard group="Brand" name="Lucide icons" subtitle="Icon system — navy stroke, 1.5–2px" viewport="700x200" --><html lang="en"><head><meta charset="utf-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<script src="https://unpkg.com/lucide@latest"></script>
+<style>
+  html,body{margin:0;background:var(--white);font-family:var(--font-sans);color:var(--fg-1);}
+  .wrap{padding:22px 24px;display:flex;flex-direction:column;gap:14px;}
+  .head{display:flex;align-items:baseline;gap:10px;}
+  .head b{font-size:13px;font-weight:600;letter-spacing:-0.02em;}
+  .head span{font-size:11px;color:var(--fg-3);letter-spacing:-0.01em;}
+  .grid{display:grid;grid-template-columns:repeat(11,1fr);gap:10px;}
+  .cell{display:flex;flex-direction:column;align-items:center;gap:6px;}
+  .ic{width:44px;height:44px;border-radius:10px;background:var(--tan-500);display:flex;align-items:center;justify-content:center;}
+  .cell.accent .ic{background:var(--ai-bg);}
+  .cell span{font-size:8.5px;color:var(--fg-3);letter-spacing:-0.01em;text-align:center;}
+  .ic svg{width:20px;height:20px;}
+</style></head><body>
+<div class="wrap">
+  <div class="head"><b>Lucide</b><span>1.5–2px stroke · navy #130E30</span></div>
+  <div class="grid" id="grid"></div>
+</div>
+<script>
+  const ICONS = ["shield-check","file-text","folder","users","line-chart","bell","settings","search",
+    "chevron-down","chevron-right","arrow-right","plus","check","x","upload","download",
+    "scale","leaf","cloud","badge-check","sparkles","message-square-quote"];
+  const g = document.getElementById("grid");
+  g.innerHTML =
+    ICONS.map(n=>`<div class="cell"><div class="ic"><i data-lucide="${n}" stroke="#130E30"></i></div><span>${n}</span></div>`).join("");
+  lucide.createIcons();
+</script>
+</body></html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ditto — Quote layouts</title>
+<link rel="icon" href="../assets/favicon.svg">
+<link rel="stylesheet" href="../colors_and_type.css">
+<link rel="stylesheet" href="slide-system.css">
+<script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+<deck-stage width="1920" height="1080">
+  <section data-label="Quote">
+    <div class="s quote-plain">
+      <div class="body">
+        <div class="qmark">“</div>
+        <h2 class="h-quote">Qalico cut our PMS report cycle from six weeks to four days. The rest is just review.</h2>
+        <div class="attr-wrap">
+          <div class="attr-rule" style="margin-top:18px;"></div>
+          <div><div class="attr-name">Élise Bonnard</div><div class="attr-role">QARA Director, Cardio-implant manufacturer</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section data-label="Quote · image">
+    <div class="s">
+      <div class="body" style="left:116px;right:116px;top:0;bottom:0;">
+        <div class="qi">
+          <image-slot id="quote-img" class="ph" shape="rect" placeholder="Drop an image"></image-slot>
+          <div>
+            <div class="qmark">“</div>
+            <h2 class="h-quote" style="font-size:60px;">Switching to Qalico meant our team could spend the back half of the quarter on the things only humans should be doing — interpretation, judgement, defending decisions to the notified body.</h2>
+            <div class="attr-name">Marc Lefèvre</div>
+            <div class="attr-role">VP Quality, mid-cap MedTech</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</deck-stage>
+
+<script src="deck-stage.js"></script>
+<script src="image-slot.js"></script>
+<script>
+  // ---- Deck title: edit this once; it auto-fills the footer of every slide ----
+  const DECK_TITLE = "Ditto · Quote layouts";
+
+  // Inject shared chrome (logo, url, footers) into every slide so the
+  // editable slide markup above stays focused on content.
+  (function () {
+    const TITLE = DECK_TITLE;
+    document.querySelectorAll('deck-stage > section').forEach((sec, i) => {
+      const s = sec.querySelector('.s');
+      if (!s) return;
+      const split = s.classList.contains('split');
+      const logo = document.createElement('img'); logo.className = 'chrome-logo'; logo.src = '../assets/ditto-logo-navy.png'; logo.alt = 'Ditto';
+      const url = document.createElement('div'); url.className = 'chrome-url'; url.textContent = 'trustditto.com';
+      const fl = document.createElement('div'); fl.className = 'chrome-ft l'; fl.textContent = TITLE;
+      const fr = document.createElement('div'); fr.className = 'chrome-ft r'; fr.textContent = String(i + 1).padStart(2, '0');
+      s.append(logo, url, fl, fr);
+      // split slides: nudge chrome so it sits over the correct panels
+      if (split) { url.style.color = '#5F5C6E'; }
+    });
+    if (window.lucide) lucide.createIcons();
+  })();
+</script>
+</body>
+</html>

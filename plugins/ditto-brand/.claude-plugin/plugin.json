@@ -1,9 +1,9 @@
 {
   "name": "ditto-brand",
-  "version": "0.1.0",
-  "description": "Ditto brand toolkit. Design on-brand slide decks and write copy that follows Ditto's brand guidelines.",
+  "version": "0.2.0",
+  "description": "Ditto brand toolkit. The full design system (tokens, fonts, assets, UI kit, slide templates) plus skills to design on-brand interfaces, build slide decks, write copy, and draft long-form resource content that follows Ditto's brand guidelines.",
   "author": {
     "name": "Ditto"
   },
-  "keywords": ["ditto", "brand", "deck", "slides", "presentation", "copywriting"]
+  "keywords": ["ditto", "brand", "design-system", "deck", "slides", "presentation", "copywriting", "ui-kit", "content"]
 }

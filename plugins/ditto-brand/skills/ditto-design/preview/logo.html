@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<!-- @dsCard group="Brand" name="Logo & mark" subtitle="Wordmark on tan/navy + favicon" viewport="700x150" --><html lang="en"><head><meta charset="utf-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  html,body{margin:0;font-family:var(--font-sans);}
+  .wrap{display:flex;}
+  .tile{flex:1;height:150px;display:flex;align-items:center;justify-content:center;}
+  .light{background:var(--tan);}
+  .dark{background:var(--navy);}
+  .logo{width:130px;height:35px;-webkit-mask:url(../assets/ditto-logo.svg) no-repeat center/contain;mask:url(../assets/ditto-logo.svg) no-repeat center/contain;}
+  .mark{width:46px;height:46px;}
+</style></head><body>
+<div class="wrap">
+  <div class="tile light"><div class="logo" style="background:var(--navy);"></div></div>
+  <div class="tile dark"><div class="logo" style="background:var(--tan);"></div></div>
+  <div class="tile light" style="flex:0 0 150px;"><img class="mark" src="../assets/favicon.svg" alt="Ditto favicon mark"></div>
+</div>
+</body></html>

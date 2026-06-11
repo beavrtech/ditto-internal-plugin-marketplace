@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<!-- @dsCard group="Components" name="Tiny tag & input-with-button" subtitle="Inline tag + sign-up capture" viewport="700x180" --><html lang="en"><head><meta charset="utf-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<script src="https://unpkg.com/lucide@latest"></script>
+<style>
+  html,body{margin:0;background:var(--white);font-family:var(--font-sans);color:var(--fg-1);}
+  .wrap{padding:28px;display:flex;flex-direction:column;gap:18px;}
+  .tiny{display:inline-flex;align-items:center;gap:4px;font-size:10px;font-weight:500;color:var(--fg-2);padding:2px 6px;border-radius:999px;}
+  .tiny.hover{background:var(--tan-200);color:var(--navy);}
+  .tiny i{width:12px;height:12px;}
+  .iwb{display:flex;width:416px;max-width:100%;background:var(--white);border:1px solid var(--border);border-radius:999px;padding:4px 4px 4px 18px;align-items:center;}
+  .iwb input{flex:1;border:none;outline:none;font-family:var(--font-sans);font-size:15px;letter-spacing:-0.02em;color:var(--navy);background:transparent;}
+  .iwb button{height:44px;border-radius:999px;background:var(--navy);color:var(--tan);border:none;padding:0 20px;font-size:15px;font-family:var(--font-sans);letter-spacing:-0.02em;cursor:pointer;}
+  .cap{font-size:11px;color:var(--fg-3);}
+</style></head><body>
+<div class="wrap">
+  <div style="display:flex;gap:18px;align-items:center;">
+    <span class="tiny">Case study <i data-lucide="chevron-right"></i></span>
+    <span class="tiny hover">Case study <i data-lucide="chevron-right"></i></span>
+    <span class="cap">Button-Tiny — inline tag, default & hover</span>
+  </div>
+  <div class="iwb"><input placeholder="Enter your work email" /><button>Get Started</button></div>
+  <span class="cap">Input-with-button — primary newsletter / sign-up capture.</span>
+</div>
+<script>lucide.createIcons();</script>
+</body></html>

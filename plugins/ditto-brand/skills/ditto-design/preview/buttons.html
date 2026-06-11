@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<!-- @dsCard group="Components" name="Buttons" subtitle="Primary · Secondary · Tertiary pills" viewport="700x150" --><html lang="en"><head><meta charset="utf-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<script src="https://unpkg.com/lucide@latest"></script>
+<style>
+  html,body{margin:0;background:var(--tan-200);font-family:var(--font-sans);color:var(--fg-1);}
+  .wrap{padding:30px 28px;display:flex;flex-direction:column;gap:16px;}
+  .row{display:flex;gap:14px;align-items:center;}
+  .btn{height:48px;border-radius:999px;padding:0 24px;display:inline-flex;align-items:center;gap:8px;font-size:16px;letter-spacing:-0.02em;border:none;cursor:pointer;font-family:var(--font-sans);}
+  .primary{background:var(--navy);color:var(--tan);}
+  .secondary{background:var(--yellow);color:var(--navy);}
+  .tertiary{background:transparent;color:var(--navy);}
+  .btn svg{width:16px;height:16px;}
+  .cap{font-size:11px;color:var(--fg-3);}
+</style></head><body>
+<div class="wrap">
+  <div class="row">
+    <button class="btn primary">Get Started <i data-lucide="chevron-down"></i></button>
+    <button class="btn secondary">Get Started <i data-lucide="chevron-down"></i></button>
+    <button class="btn tertiary">Frameworks <i data-lucide="chevron-down"></i></button>
+  </div>
+  <span class="cap">Primary (navy) · Secondary (yellow) · Tertiary (nav link). All pills, Inter 16 / −2%, 48px tall.</span>
+</div>
+<script>lucide.createIcons();</script>
+</body></html>

@@ -28,7 +28,7 @@ Our internal marketplace of Claude plugins for the Ditto team.
 
 | Plugin | What it does |
 |--------|--------------|
-| [`ditto-brand`](./plugins/ditto-brand) | On-brand deck design (`deck-designer`) and brand-guideline copywriting (`brand-copywriting`, placeholder). |
+| [`ditto-brand`](./plugins/ditto-brand) | The full Ditto design system plus on-brand UI design (`ditto-design`), deck design (`deck-designer`), brand-guideline copywriting (`brand-copywriting`), and long-form resource writing (`resource-writer`). |
 
 ## Repository layout
 
@@ -40,8 +40,10 @@ plugins/
     .claude-plugin/plugin.json
     README.md
     skills/
+      ditto-design/        # full design system (tokens, fonts, assets, ui_kits, slides) + SKILL.md
       deck-designer/SKILL.md
       brand-copywriting/SKILL.md
+      resource-writer/SKILL.md
 ```
 
 ## Adding a plugin
