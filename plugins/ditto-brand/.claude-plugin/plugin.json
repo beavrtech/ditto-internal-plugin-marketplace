@@ -1,0 +1,9 @@
+{
+  "name": "ditto-brand",
+  "version": "0.1.0",
+  "description": "Ditto brand toolkit. Design on-brand slide decks and write copy that follows Ditto's brand guidelines.",
+  "author": {
+    "name": "Ditto"
+  },
+  "keywords": ["ditto", "brand", "deck", "slides", "presentation", "copywriting"]
+}

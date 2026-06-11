@@ -1,0 +1,17 @@
+{
+  "name": "ditto-internal",
+  "owner": {
+    "name": "Ditto"
+  },
+  "metadata": {
+    "description": "Ditto's internal marketplace of Claude plugins for the team.",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "ditto-brand",
+      "source": "./plugins/ditto-brand",
+      "description": "Ditto brand toolkit: on-brand deck design and brand-guideline copywriting."
+    }
+  ]
+}
