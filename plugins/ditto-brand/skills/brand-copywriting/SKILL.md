@@ -95,8 +95,7 @@ These recurring devices are the most reliable way to make copy read as Ditto. Re
 ## VOCABULARY
 
 To use:
-- FR: professionnels RSE, responsable RSE, responsable QHSE, coach, accompagnement, conformité RSE, preuves (base de preuves), fiche d'évaluation (or scorecard), médaille, usage raisonné de l'IA, VS.
-- VS (formerly VSME): write "VS (ex-VSME)" at the first mention in an article, then "VS" or "VSME" freely. Keep "VSME" in titles, slugs and URLs. In French, « le VS », « du VS ».
+- FR: professionnels RSE, responsable RSE, responsable QHSE, coach, accompagnement, conformité RSE, preuves (base de preuves), fiche d'évaluation, médaille, usage raisonné de l'IA, VS (ex-VSME).
 - EN: sustainability professionals, sustainability manager, coach, support, compliance, proof base, scorecard, medal, reasoned use of AI.
 - Refer to the product as "Ditto" (capital D, no "the Ditto"), a "platform" and "your central command".
 - Capitalization: Ditto; EcoVadis, CDP, CSRD, VS, ISO 14001/45001/50001; ESG, ESRS, KPI. Define acronyms on first use in external copy.
