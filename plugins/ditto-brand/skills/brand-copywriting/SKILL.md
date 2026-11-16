@@ -29,7 +29,7 @@ These rules are distilled from Ditto's brand guidelines, the live site (trustdit
 
 - Figures and proof points: Notion "Chiffres Ditto & marché" (https://app.notion.com/p/29926365f697802685a8ee22447d6077). This is the only source. If a figure is not there, mark it "[STAT: verify]".
 - Target audience, personas, competitors: Notion "Cheat sheet (ICP, personas, ressources, concurrents)" (https://app.notion.com/p/beavr/Cheat-sheet-ICP-personas-ressources-concurrents-34326365f69780c38010c3d3ccfbefa0). It evolves, so always read it rather than relying on a copy.
-- Positioning and the one-line definition: the positioning doc (https://claude.ai/artifact/KmwRqdi4VkDNkxvoM4CKFp?sk=U0Z5mYQWocNb3HyrpPhNNQ#155f76f0-6de7.mgsa0hga281.133). The one-liner below can change; the doc prevails.
+- Positioning and the one-line definition: the positioning doc (https://claude.ai/artifact/KmwRqdi4VkDNkxvoM4CKFp). The one-liner below can change; the doc prevails.
 
 For any voice question not covered here, the tie-breaker is one test: would this line sit comfortably on the Ditto homepage or in the Manifesto? If not, rewrite.
 
