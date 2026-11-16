@@ -28,8 +28,8 @@ Write Ditto copy that sounds unmistakably like Ditto: a sharp, warm expert who h
 These rules are distilled from Ditto's brand guidelines, the live site (trustditto.com), the Manifesto, and published posts. Do not hard-code facts that change (figures, targets, positioning). Pull them from the references below instead:
 
 - Figures and proof points: Notion "Chiffres Ditto & marché" (https://app.notion.com/p/29926365f697802685a8ee22447d6077). This is the only source. If a figure is not there, mark it "[STAT: verify]".
-- Target audience, personas, competitors: Notion "Cheat sheet (ICP, personas, ressources, concurrents)" (https://app.notion.com/p/beavr/Cheat-sheet-ICP-personas-ressources-concurrents-34326365f69780c38010c3d3ccfbefa0). It evolves, so always read it rather than relying on a copy.
-- Positioning and the one-line definition: Notion "Positionnement Ditto" (https://app.notion.com/p/41a26365f697800d9f26ce51431a4d4b). The one-liner below can change; the page prevails.
+- Target audience, personas, competitors: Notion "Positioning & Messaging", section "Target, personas and channels" (https://app.notion.com/p/3ce26365f697804daf4ae688bd64dd60). It evolves, so always read it rather than relying on a copy.
+- Positioning and the one-line definition: Notion "Positioning & Messaging" (https://app.notion.com/p/3ce26365f697804daf4ae688bd64dd60). The one-liner below can change; the page prevails.
 
 For any voice question not covered here, the tie-breaker is one test: would this line sit comfortably on the Ditto homepage or in the Manifesto? If not, rewrite.
 
@@ -43,7 +43,7 @@ For any voice question not covered here, the tie-breaker is one test: would this
 
 ## WHO WE'RE TALKING TO
 
-Sustainability, ESG, quality-safety-environment (QHSE) and compliance managers, and the leaders who back them. Read the Cheat sheet for the current definition of the target (company size, roles, segments). Often the sole or near-sole owner of the topic: capable, time-poor, juggling several frameworks, accountable to clients, buyers, investors, and auditors. Write to that person: credit their effort, respect their time, and tell them what to know and what to do next.
+Sustainability, ESG, quality-safety-environment (QHSE) and compliance managers, and the leaders who back them. Read the Positioning & Messaging page for the current definition of the target (company size, roles, segments). Often the sole or near-sole owner of the topic: capable, time-poor, juggling several frameworks, accountable to clients, buyers, investors, and auditors. Write to that person: credit their effort, respect their time, and tell them what to know and what to do next.
 
 ## BRAND FACTS (the canonical lines)
 
