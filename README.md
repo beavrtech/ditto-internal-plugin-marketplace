@@ -29,6 +29,7 @@ Our internal marketplace of Claude plugins for the Ditto team.
 | Plugin | What it does |
 |--------|--------------|
 | [`ditto-brand`](./plugins/ditto-brand) | The full Ditto design system plus on-brand UI design (`ditto-design`), deck design (`deck-designer`), brand-guideline copywriting (`brand-copywriting`), and long-form resource writing (`resource-writer`). |
+| [`ditto-content`](./plugins/ditto-content) | Content skills: LinkedIn posts, the weekly « 10 actus RSE » review, lead magnet launches, the newsletter. Voice comes from `ditto-brand`. |
 
 ## Repository layout
 

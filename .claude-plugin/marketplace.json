@@ -12,6 +12,11 @@
       "name": "ditto-brand",
       "source": "./plugins/ditto-brand",
       "description": "Ditto brand toolkit: the full design system plus on-brand UI design, deck design, brand-guideline copywriting, and resource writing."
+    },
+    {
+      "name": "ditto-content",
+      "source": "./plugins/ditto-content",
+      "description": "Skills de contenu de Ditto : posts LinkedIn, 10 actus RSE, lead magnets, newsletter."
     }
   ]
 }

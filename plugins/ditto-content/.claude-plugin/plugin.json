@@ -1,0 +1,9 @@
+{
+  "name": "ditto-content",
+  "version": "0.1.0",
+  "description": "Skills de contenu de Ditto : posts LinkedIn, revue « 10 actus RSE », lancement de lead magnet, newsletter. La voix de marque vient du plugin ditto-brand.",
+  "author": {
+    "name": "Ditto"
+  },
+  "keywords": ["ditto", "contenu", "linkedin", "newsletter", "lead-magnet", "rse"]
+}
