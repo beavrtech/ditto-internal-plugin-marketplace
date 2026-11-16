@@ -39,6 +39,7 @@ Un seul point d'entrée pour tout ce qui touche à LinkedIn chez Ditto : quoi po
 
 Les angles eux-mêmes vivent hors du skill, dans la base Notion « Angles Ditto », parce qu'ils nourrissent tous les canaux et pas seulement LinkedIn. Le skill y renvoie et ne les recopie pas.
 
+- `references/voice.md` : la voix de Ditto sur LinkedIn, par compte (page Ditto, équipe), établie à partir de 21 posts réels.
 - `references/weekly-planning.md` : relais, cadence, règles anti-doublon.
 - `references/post-types/tla.md` : posts Thought Leader Ads (texte seul, à enregistrer).
 - `references/qa-checklist.md` : test de valeur et contrôles avant livraison.

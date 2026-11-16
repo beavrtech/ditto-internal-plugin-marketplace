@@ -58,8 +58,8 @@ Privilégier une formulation orientée action ou diagnostic plutôt qu'une descr
 | Nom fichier | `AAAAMMJJ_[FR/EN]_Email marketing - White Paper - [Nom du guide]` |
 | Subject | A/B test : Version A avec [Guide] en préfixe, Version B sans |
 | Preview text | Complémentaire à l'objet, jamais redondant |
-| From name | Ugo de Ditto |
-| From address | ugo.leborgne@trustditto.com |
+| From name | Expéditeur défini dans HubSpot pour le compte concerné (à confirmer avec Flora, ne pas coder d'adresse personnelle ici) |
+| From address | Idem : celle de l'expéditeur HubSpot |
 | Included segments | Voir defaults ci-dessous |
 | Excluded segments | Voir defaults ci-dessous |
 | Bannière | Titre court + sous-titre (voir règle bannière ci-dessus) |
