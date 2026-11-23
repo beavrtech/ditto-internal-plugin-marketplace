@@ -2,7 +2,8 @@
 name: ditto-design
 description: >
   Use this skill to generate well-branded interfaces and assets for Ditto (the
-  CSR & compliance copilot) — production code or throwaway prototypes/mocks. It
+  sustainability compliance platform with a coach), for production code or
+  throwaway prototypes/mocks. It
   bundles the full Ditto design system: brand guidelines, color and type tokens,
   self-hosted fonts, brand assets (logo, illustrations, shapes, icons), a
   marketing-site UI kit, and a slide-template system. Reach for it on requests

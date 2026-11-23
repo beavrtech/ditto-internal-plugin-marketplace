@@ -10,8 +10,8 @@ description: >
   Approachable characteristics, vocabulary, mechanics, and headline/CTA
   patterns, in French (default) and US English. It governs the VOICE only: for
   LinkedIn post mechanics (formats, hooks, planning, checks) use the LinkedIn
-  content skill. For long-form Blog, News, or Guide content on the resource
-  pages, use the resource-writer skill (same voice DNA, dedicated structure).
+  content skill. For long-form Blog, News, collection or Guide articles on the
+  website, use the ditto-blog-optimisation skill in the ditto-landing-page repo.
   For slide decks, this skill governs the words while deck-designer governs
   layout.
 version: 0.2.0
@@ -90,7 +90,7 @@ These recurring devices are the most reliable way to make copy read as Ditto. Re
 - Ads / short promo: one benefit, one verb, no throat-clearing.
 - Product / UI microcopy: plain and reassuring; verbs over nouns; never cute at the user's expense; errors are calm and actionable.
 - Slides: this skill governs the words; deck-designer governs design. Keep lines short enough to read on a screen.
-- Long-form resource (Blog, News, Guide): NOT here. Hand off to resource-writer (same voice DNA, with its own bucket structures, SEO, and guardrails).
+- Long-form website articles (Blog, News, collection, Guide): NOT here. They follow the ditto-blog-optimisation skill in the ditto-landing-page repo (structure, SEO, linking, publishing).
 
 ## VOCABULARY
 
@@ -180,4 +180,4 @@ From published posts (anonymised, French):
 - [ ] No banned AI-tell words or patterns (showcase, deliberate triads and natural contrasts excepted).
 - [ ] No greenwashing, no guaranteed outcomes, no invented stats; figures come from "Chiffres Ditto & marché".
 - [ ] No customer named without approval.
-- [ ] Long-form Blog/News/Guide routed to resource-writer; LinkedIn mechanics routed to the LinkedIn content skill.
+- [ ] Long-form Blog/News/collection/Guide articles routed to ditto-blog-optimisation (ditto-landing-page repo); LinkedIn mechanics routed to the LinkedIn content skill.
