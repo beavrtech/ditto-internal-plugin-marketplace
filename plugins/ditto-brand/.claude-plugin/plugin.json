@@ -1,6 +1,6 @@
 {
   "name": "ditto-brand",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Ditto brand toolkit. The full design system (tokens, fonts, assets, UI kit, slide templates) plus skills to design on-brand interfaces, build slide decks, and write copy that follows Ditto's brand guidelines.",
   "author": {
     "name": "Ditto"

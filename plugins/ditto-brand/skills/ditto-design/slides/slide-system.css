@@ -224,7 +224,7 @@ deck-stage:not(:defined){visibility:hidden}
   .ghost-txt .h-head{font-size:112px;line-height:0.98;margin:0 0 22px;}
   .ghost-txt .lead{max-width:600px;}
 
-  /* 20 · IMAGE + CHECKLIST (copilot) */
+  /* 20 · IMAGE + CHECKLIST */
   .copi{display:grid;grid-template-columns:880px 1fr;gap:96px;height:100%;align-items:center;}
   .copi-img{width:880px;height:770px;object-fit:cover;border-radius:4px;background:var(--img);}
   .copi-txt .eyebrow{margin-bottom:26px;}

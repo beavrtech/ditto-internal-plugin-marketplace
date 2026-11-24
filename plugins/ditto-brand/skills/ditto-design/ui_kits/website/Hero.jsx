@@ -23,7 +23,7 @@ function Hero({ onSubmit }) {
     <section style={{ background: "var(--tan)", padding: "64px 48px 0", overflow: "hidden" }}>
       <div style={{ maxWidth: 1000, margin: "0 auto", display: "flex", flexDirection: "column",
         alignItems: "center", gap: 24, textAlign: "center" }}>
-        <h1 className="h1" style={{ margin: 0, maxWidth: 880 }}>Your CSR and compliance copilot</h1>
+        <h1 className="h1" style={{ margin: 0, maxWidth: 880 }}>Your CSR and compliance platform, with a dedicated coach</h1>
         <p style={{ margin: 0, maxWidth: 640, fontFamily: "var(--font-sans)", fontSize: 22, lineHeight: 1.25,
           letterSpacing: "-0.02em", color: "var(--navy)" }}>
           Ditto helps you level up your CSR practices and meet your partner requirements across frameworks like EcoVadis, ISO, CSRD, and CDP.

@@ -25,7 +25,7 @@ function Footer() {
         <div style={{ flex: "1 1 240px", minWidth: 200 }}>
           <DittoLogo height={32} />
           <p style={{ fontFamily: "var(--font-serif)", fontSize: 22, lineHeight: 1.2, letterSpacing: "-0.01em", color: "var(--navy)", marginTop: 20, maxWidth: 260 }}>
-            Your CSR and compliance copilot.
+            Your CSR and compliance platform, with a dedicated coach.
           </p>
           <div style={{ display: "flex", gap: 10, marginTop: 20 }}>
             {[
