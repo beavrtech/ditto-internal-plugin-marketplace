@@ -13,7 +13,7 @@ Built on the `deck-stage.js` shell (1920×1080, auto-scaling, print-to-PDF). Eac
 | `quotes.html` | **Slides · Quotes** | Large pull-quote, quote + image |
 | `closings.html` | **Slides · Closings** | Sign-off bookends — thank-you split + image, CTA over shapes band, solid-yellow type-only, CTA on full-bleed image |
 | `stats.html` | **Slides · Stats** | Big number, three-stat row, circle stat, full-yellow multiplier, split-stat problem |
-| `content.html` | **Slides · Content** | Bullets, goal cards, audience cards, speakers, speaker bio, webinar detail, three cards, copilot checklist, enjeux, CSRD matrix, timeline |
+| `content.html` | **Slides · Content** | Bullets, goal cards, audience cards, speakers, speaker bio, webinar detail, three cards, checklist, enjeux, CSRD matrix, timeline |
 All decks share **`slide-system.css`** — the single source of truth for canvas, type, spacing and every slide-specific layout. Edit it once and every deck inherits the change.
 
 ## The system

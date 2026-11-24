@@ -1,11 +1,11 @@
 # Ditto Design System
 
-> **Ditto** — *Your CSR and compliance copilot.*
+> **Ditto** — *Your CSR and compliance platform, with a dedicated coach.*
 > We enable businesses to build trust and build better, together.
 
 Ditto is a CSR (Corporate Social Responsibility) and compliance platform that helps mid-size companies (250–1,000 employees) **get compliant, stay compliant, and prove it** to partners and stakeholders. It combines software, AI, and embedded human expertise so customers can ace a new assessment, showcase their standards, and level up their CSR performance across frameworks like **EcoVadis, ISO 14001, CSRD, CDP, and UN Global Compact**.
 
-Audience: CSR managers, compliance officers, and company leaders. Ditto positions itself as a *copilot* — a knowledgeable, encouraging partner — not a point solution or a consulting firm.
+Audience: CSR managers, compliance officers, and company leaders. Ditto positions itself as a compliance platform paired with a dedicated coach: a knowledgeable, encouraging partner, not a point solution or a consulting firm.
 
 ---
 
@@ -39,9 +39,9 @@ Ditto's voice is built on four characteristics: **Punchy · Positive · Expert �
 - **Approachable** — easygoing, down to earth. The opposite of compliance's "alphabet soup of acronyms." Talks like real people.
 
 **Voice mechanics:**
-- **Person:** Second person — "you / your." Ditto is the copilot beside you. First-person plural ("we") only when speaking as the company (About, manifesto).
+- **Person:** Second person — "you / your." Ditto is the platform, and your coach is by your side. First-person plural ("we") only when speaking as the company (About, manifesto).
 - **Casing:** Sentence case everywhere — headlines, buttons, nav. No Title Case, no ALL-CAPS shouting. (Buttons: "Get Started", "Log in".)
-- **Headlines** are short declarative promises set in Hedvig serif: *"Your CSR and compliance copilot"*, *"Get compliant four times faster"*, *"Advanced technology meets human expertise"*, *"When sustainable businesses win, the world wins."*
+- **Headlines** are short declarative promises set in Hedvig serif: *"Software gets you organised. Your coach gets you the medal."*, *"Get compliant four times faster"*, *"Advanced technology meets human expertise"*, *"When sustainable businesses win, the world wins."*
 - **Body** is plain-spoken and specific — names real frameworks (EcoVadis, ISO, CSRD, CDP) rather than vague "compliance."
 - **Em dashes** used freely for rhythm and asides — "all in one platform", "because we do".
 - **Emoji:** Not used. The brand expresses personality through words, color, and illustration, not emoji.

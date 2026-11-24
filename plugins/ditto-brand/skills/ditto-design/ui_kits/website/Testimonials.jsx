@@ -2,7 +2,7 @@
 const { useState: useStateT } = React;
 
 const QUOTES = [
-  { q: "Ditto turned our EcoVadis renewal from a month of dread into a focused two-week sprint. The copilot just knew what to ask for.", a: "Camille Roux", r: "Head of CSR, Lumen Foods" },
+  { q: "Ditto turned our EcoVadis renewal from a month of dread into a focused two-week sprint. Our coach just knew what to ask for.", a: "Camille Roux", r: "Head of CSR, Lumen Foods" },
   { q: "We answer supplier questionnaires in a fraction of the time now\u2014and the answers are consistent across every framework.", a: "Daniel Okafor", r: "Compliance Lead, Northwind" },
   { q: "It feels less like software and more like having a compliance expert on the team who never sleeps.", a: "Sofia Marchetti", r: "COO, Verde Manufacturing" },
 ];
@@ -38,7 +38,7 @@ function CTABand({ onGetStarted }) {
       <div style={{ maxWidth: 760, margin: "0 auto", textAlign: "center", display: "flex", flexDirection: "column", alignItems: "center", gap: 24 }}>
         <h2 className="h1" style={{ margin: 0, fontSize: 64 }}>Ready to get compliant? Ditto.</h2>
         <p style={{ margin: 0, fontFamily: "var(--font-sans)", fontSize: 22, lineHeight: 1.35, letterSpacing: "-0.02em", color: "var(--navy)" }}>
-          Turn your CSR program into a strategic advantage with a compliance copilot that's with you every step of the way.
+          Turn your CSR program into a strategic advantage with a dedicated coach by your side every step of the way.
         </p>
         <Button variant="primary" icon="arrow-right" onClick={onGetStarted}>Get Started</Button>
       </div>
